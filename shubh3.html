@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#8B4513" />
+  <title>Natura India - Premium Natural Perfumes & Essential Oils | Varanasi</title>
+  <meta name="description" content="Natura India offers premium natural perfumes, essential oils, solid perfumes, body oils, diffusers, and room fragrances in Varanasi." />
+  <meta name="keywords" content="natural perfumes, essential oils, Varanasi perfume store, solid perfumes, body oils, diffusers, room fragrances, Natura India" />
+  <meta name="author" content="Natura India" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Natura India - Premium Natural Perfumes & Essential Oils" />
+  <meta property="og:description" content="Discover rich, long-lasting natural fragrances at Natura India, Varanasi." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img1.png" />
+  <meta property="og:url" content="https://natura-india.com" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --bg: #fffaf2;
+      --card: rgba(255, 255, 255, 0.82);
+      --card-solid: #ffffff;
+      --text: #25150f;
+      --muted: #6c4d39;
+      --brand: #8b4513;
+      --brand-2: #d2691e;
+      --gold: #daa520;
+      --green: #228b22;
+      --line: rgba(139, 69, 19, 0.12);
+      --shadow: 0 18px 50px rgba(73, 35, 12, 0.12);
+      --shadow-strong: 0 24px 70px rgba(73, 35, 12, 0.18);
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --radius-sm: 12px;
+      --container: 1240px;
+      --gradient: linear-gradient(135deg, #8b4513 0%, #d2691e 55%, #f4a460 100%);
+      --gradient-soft: linear-gradient(135deg, rgba(139, 69, 19, 0.12), rgba(210, 105, 30, 0.12));
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 96px;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(210, 105, 30, 0.08), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(34, 139, 34, 0.06), transparent 25%),
+        var(--bg);
+      overflow-x: hidden;
+      line-height: 1.7;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--container));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding: 110px 0;
+      position: relative;
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 44px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(139, 69, 19, 0.09);
+      color: var(--brand);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 18px;
+    }
+
+    .title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.2rem, 4vw, 4.4rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 18px;
+    }
+
+    .title span {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(20px);
+      background: rgba(255, 250, 242, 0.82);
+      border-bottom: 1px solid rgba(139, 69, 19, 0.12);
+      transition: all 0.3s ease;
+    }
+
+    .header.scrolled {
+      box-shadow: 0 10px 30px rgba(64, 33, 13, 0.08);
+      background: rgba(255, 250, 242, 0.94);
+    }
+
+    .nav {
+      min-height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+
+    .brand-mark {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      background: var(--gradient);
+      display: grid;
+      place-items: center;
+      color: white;
+      box-shadow: var(--shadow);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .brand-text strong {
+      font-size: 1.1rem;
+    }
+
+    .brand-text span {
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      position: relative;
+      font-weight: 600;
+      color: #3d2418;
+      padding: 10px 0;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      border-radius: 99px;
+      background: var(--gradient);
+      transition: width 0.25s ease;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 0;
+      border-radius: 999px;
+      padding: 14px 22px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease, color 0.22s ease;
+      white-space: nowrap;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      color: white;
+      background: var(--gradient);
+      box-shadow: 0 14px 34px rgba(139, 69, 19, 0.24);
+    }
+
+    .btn-secondary {
+      background: rgba(139, 69, 19, 0.08);
+      color: var(--brand);
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.8);
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: #2c1810;
+      margin: 5px auto;
+      border-radius: 99px;
+      transition: all 0.25s ease;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: calc(100vh - 84px);
+      display: grid;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg, rgba(139, 69, 19, 0.92), rgba(34, 139, 34, 0.72)),
+        url("hero-bg-perfume.jpg") center/cover no-repeat;
+      filter: saturate(1.05);
+      z-index: -2;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 15% 25%, rgba(255,255,255,0.18), transparent 22%),
+        radial-gradient(circle at 80% 18%, rgba(255,255,255,0.12), transparent 18%),
+        radial-gradient(circle at 50% 100%, rgba(255,255,255,0.08), transparent 25%);
+      z-index: -1;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 42px;
+      align-items: center;
+      padding: 84px 0 78px;
+      color: white;
+    }
+
+    .hero-copy {
+      max-width: 700px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.28);
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(12px);
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(3rem, 6vw, 6rem);
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+      margin-bottom: 20px;
+      text-shadow: 0 10px 28px rgba(0, 0, 0, 0.24);
+    }
+
+    .hero p {
+      font-size: clamp(1rem, 2.1vw, 1.2rem);
+      max-width: 60ch;
+      color: rgba(255,255,255,0.94);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin: 28px 0;
+    }
+
+    .stat {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.16);
+      backdrop-filter: blur(10px);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.4rem;
+      margin-bottom: 4px;
+    }
+
+    .stat span {
+      font-size: 0.93rem;
+      color: rgba(255,255,255,0.88);
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.14);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 30px;
+      padding: 26px;
+      box-shadow: var(--shadow-strong);
+    }
+
+    .hero-card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .mini-card {
+      background: rgba(255,255,255,0.13);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 22px;
+      padding: 18px;
+      min-height: 140px;
+    }
+
+    .mini-card i {
+      font-size: 1.3rem;
+      color: #ffe28e;
+      margin-bottom: 12px;
+    }
+
+    .mini-card h3 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    .mini-card p {
+      font-size: 0.93rem;
+      color: rgba(255,255,255,0.9);
+    }
+
+    /* Trusted strip */
+    .trust-strip {
+      padding: 24px 0 0;
+    }
+
+    .trust-row {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: -48px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .trust-item {
+      background: var(--card-solid);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .trust-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: var(--gradient-soft);
+      color: var(--brand);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .trust-item strong {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .trust-item span {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .about-media {
+      position: relative;
+    }
+
+    .about-frame {
+      border-radius: 34px;
+      overflow: hidden;
+      box-shadow: var(--shadow-strong);
+      border: 1px solid var(--line);
+      background: #f3e5d5;
+      aspect-ratio: 0.93 / 1;
+      position: relative;
+    }
+
+    .about-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .badge-floating {
+      position: absolute;
+      left: -18px;
+      bottom: 22px;
+      background: rgba(255,255,255,0.88);
+      border: 1px solid rgba(255,255,255,0.5);
+      backdrop-filter: blur(16px);
+      border-radius: 20px;
+      padding: 14px 16px;
+      box-shadow: var(--shadow);
+      max-width: 220px;
+    }
+
+    .badge-floating strong {
+      display: block;
+      color: var(--brand);
+      margin-bottom: 2px;
+    }
+
+    .badge-floating span {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .about-copy h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2rem, 3.5vw, 3.6rem);
+      line-height: 1.08;
+      margin-bottom: 16px;
+    }
+
+    .about-copy h2 span {
+      color: var(--brand);
+    }
+
+    .about-copy p {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 26px;
+    }
+
+    .feature {
+      background: var(--card-solid);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .feature i {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: var(--gradient);
+      margin-bottom: 14px;
+    }
+
+    .feature h3 {
+      font-size: 1.03rem;
+      margin-bottom: 8px;
+    }
+
+    .feature p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* Products */
+    .tabs {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+
+    .tab-btn {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.8);
+      color: #4b2d20;
+      padding: 12px 18px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn.active {
+      background: var(--gradient);
+      color: white;
+      border-color: transparent;
+      box-shadow: 0 12px 30px rgba(139, 69, 19, 0.18);
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: var(--card-solid);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.24s ease, box-shadow 0.24s ease;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-strong);
+    }
+
+    .product-image {
+      aspect-ratio: 1 / 1;
+      background: linear-gradient(135deg, #f5e8d8, #fff);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .product-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(255,255,255,0.92);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 0.84rem;
+      font-weight: 800;
+      color: var(--brand);
+      box-shadow: var(--shadow);
+    }
+
+    .product-body {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex: 1;
+    }
+
+    .product-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .product-body h3 {
+      font-size: 1.08rem;
+      line-height: 1.3;
+    }
+
+    .product-price {
+      color: var(--brand);
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .product-body p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .product-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: auto;
+      padding-top: 4px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .stars {
+      color: var(--gold);
+    }
+
+    /* Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 0.8fr;
+      grid-template-rows: 280px 280px;
+      gap: 18px;
+    }
+
+    .gallery-item {
+      border-radius: 26px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+      min-height: 100%;
+    }
+
+    .gallery-item:nth-child(1) {
+      grid-row: span 2;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: auto 0 0 0;
+      padding: 22px;
+      background: linear-gradient(to top, rgba(0,0,0,0.65), transparent);
+      color: white;
+    }
+
+    /* Process */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .process-step {
+      background: var(--card-solid);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .step-no {
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      background: var(--gradient);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      margin-bottom: 18px;
+      box-shadow: 0 12px 30px rgba(139, 69, 19, 0.2);
+    }
+
+    .process-step h3 {
+      margin-bottom: 10px;
+      font-size: 1.08rem;
+    }
+
+    .process-step p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* Testimonials */
+    .testimonials-wrap {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .testimonial {
+      background: var(--card-solid);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .quote {
+      font-size: 3rem;
+      line-height: 1;
+      color: rgba(139, 69, 19, 0.2);
+      margin-bottom: 8px;
+    }
+
+    .testimonial p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .customer {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--gradient);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+    }
+
+    .customer strong {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .customer span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: grid;
+      gap: 14px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--card-solid);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 20px 22px;
+      background: transparent;
+      border: 0;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      cursor: pointer;
+      font-weight: 800;
+      color: #311d15;
+    }
+
+    .faq-question i {
+      transition: transform 0.22s ease;
+    }
+
+    .faq-item.open .faq-question i {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.28s ease;
+    }
+
+    .faq-answer p {
+      padding: 0 22px 20px;
+      color: var(--muted);
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .contact-panel,
+    .contact-form {
+      background: var(--card-solid);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+      padding: 26px;
+    }
+
+    .contact-panel h3,
+    .contact-form h3 {
+      font-size: 1.5rem;
+      margin-bottom: 14px;
+    }
+
+    .contact-panel p {
+      color: var(--muted);
+      margin-bottom: 22px;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 16px;
+      border-radius: 20px;
+      background: rgba(139, 69, 19, 0.05);
+    }
+
+    .contact-item i {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: var(--gradient);
+      color: white;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .contact-item strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .contact-item span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .socials {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .socials a {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      background: rgba(139, 69, 19, 0.08);
+      display: grid;
+      place-items: center;
+      color: var(--brand);
+      transition: all 0.22s ease;
+    }
+
+    .socials a:hover {
+      background: var(--gradient);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .form-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .field {
+      display: grid;
+      gap: 8px;
+    }
+
+    .field label {
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .field input,
+    .field textarea,
+    .field select {
+      width: 100%;
+      border: 1px solid rgba(139, 69, 19, 0.16);
+      border-radius: 18px;
+      padding: 14px 16px;
+      background: rgba(255,255,255,0.96);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .field input:focus,
+    .field textarea:focus,
+    .field select:focus {
+      outline: none;
+      border-color: rgba(139, 69, 19, 0.45);
+      box-shadow: 0 0 0 4px rgba(139, 69, 19, 0.09);
+    }
+
+    .field textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .form-note {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 34px 0 54px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr 0.9fr;
+      gap: 18px;
+    }
+
+    .footer h4 {
+      color: var(--text);
+      margin-bottom: 14px;
+      font-size: 1.02rem;
+    }
+
+    .footer ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .footer ul a:hover {
+      color: var(--brand);
+    }
+
+    .copy {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 0.92rem;
+    }
+
+    /* Floating action button */
+    .fab {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 999;
+      display: grid;
+      gap: 12px;
+    }
+
+    .fab a {
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      color: white;
+      box-shadow: var(--shadow-strong);
+    }
+
+    .fab .wa {
+      background: #25d366;
+    }
+
+    .fab .call {
+      background: var(--gradient);
+    }
+
+    /* Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive */
+    @media (max-width: 1100px) {
+      .hero-grid,
+      .about-grid,
+      .contact-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .process-grid,
+      .testimonials-wrap,
+      .trust-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto;
+      }
+
+      .gallery-item:nth-child(1) {
+        grid-row: auto;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .nav-links,
+      .nav-actions .btn-secondary {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: inline-grid;
+        place-items: center;
+      }
+
+      .mobile-menu {
+        display: grid;
+        gap: 8px;
+        padding: 14px 0 20px;
+        border-top: 1px solid var(--line);
+        margin-top: 14px;
+      }
+
+      .mobile-menu a,
+      .mobile-menu button {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .hero-stats,
+      .feature-grid,
+      .form-row,
+      .hero-card-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        line-height: 1.02;
+      }
+
+      .badge-floating {
+        position: static;
+        margin-top: 14px;
+        max-width: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .section {
+        padding: 84px 0;
+      }
+
+      .hero-grid {
+        padding: 56px 0 68px;
+      }
+
+      .products-grid,
+      .process-grid,
+      .testimonials-wrap,
+      .trust-row,
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-ctas,
+      .tabs {
+        justify-content: stretch;
+      }
+
+      .hero-ctas .btn,
+      .tabs .tab-btn {
+        width: 100%;
+      }
+
+      .nav {
+        min-height: 76px;
+      }
+
+      .brand-text span {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="#home" aria-label="Natura India home">
+          <div class="brand-mark"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+          <div class="brand-text">
+            <strong>Natura India</strong>
+            <span>Natural Fragrance Studio</span>
+          </div>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a class="btn btn-secondary" href="tel:+919793333324"><i class="fa-solid fa-phone"></i> Call Now</a>
+          <a class="btn btn-primary" href="https://wa.me/919793333324" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+
+      <div id="mobileMenu" class="mobile-menu" hidden>
+        <a class="btn btn-secondary" href="#home">Home</a>
+        <a class="btn btn-secondary" href="#about">About</a>
+        <a class="btn btn-secondary" href="#products">Products</a>
+        <a class="btn btn-secondary" href="#gallery">Gallery</a>
+        <a class="btn btn-secondary" href="#reviews">Reviews</a>
+        <a class="btn btn-secondary" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <div class="hero-badge"><i class="fa-solid fa-star"></i> 5.0 rating from 200+ customers</div>
+        <h1>Premium Natural Perfumes Crafted for Lasting Impression</h1>
+        <p>
+          Discover rich fragrances, essential oils, solid perfumes, body oils, diffusers, and room fragrances made for modern luxury and daily comfort.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>215+</strong>
+            <span>Reviews</span>
+          </div>
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Natural Focus</span>
+          </div>
+          <div class="stat">
+            <strong>Varanasi</strong>
+            <span>Local Store</span>
+          </div>
+        </div>
+
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#products"><i class="fa-solid fa-bag-shopping"></i> Explore Products</a>
+          <a class="btn btn-secondary" href="#contact"><i class="fa-solid fa-location-dot"></i> Visit Store</a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="hero-card-grid">
+          <div class="mini-card">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <h3>Long-Lasting Fragrance</h3>
+            <p>Balanced compositions designed for a refined all-day scent profile.</p>
+          </div>
+          <div class="mini-card">
+            <i class="fa-solid fa-leaf"></i>
+            <h3>Natural Ingredients</h3>
+            <p>Carefully selected oils and fragrance notes with elegant presentation.</p>
+          </div>
+          <div class="mini-card">
+            <i class="fa-solid fa-gift"></i>
+            <h3>Gift-Friendly Packs</h3>
+            <p>Perfect for personal use, festive gifting, and premium corporate hampers.</p>
+          </div>
+          <div class="mini-card">
+            <i class="fa-solid fa-shield-heart"></i>
+            <h3>Trusted Quality</h3>
+            <p>Built for consistent customer satisfaction and repeat purchases.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="trust-strip">
+    <div class="container">
+      <div class="trust-row reveal">
+        <div class="trust-item">
+          <div class="trust-icon"><i class="fa-solid fa-award"></i></div>
+          <div><strong>Premium Quality</strong><span>Carefully curated fragrance range</span></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <div><strong>Fast Local Support</strong><span>Quick response on calls & WhatsApp</span></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><i class="fa-solid fa-box-open"></i></div>
+          <div><strong>Beautiful Packaging</strong><span>Ready for shelves and gifting</span></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><i class="fa-solid fa-store"></i></div>
+          <div><strong>Retail Ready</strong><span>Designed for store and online presence</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow"><i class="fa-solid fa-circle-info"></i> About Natura India</div>
+        <h2 class="title">Crafting <span>luxury fragrances</span> with a natural soul</h2>
+        <p class="subtitle">A modern, premium fragrance brand identity designed to impress visitors, build trust, and convert local customers into buyers.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-media reveal">
+          <div class="about-frame">
+            <img src="img1.png" alt="Natura India perfume collection" />
+          </div>
+          <div class="badge-floating">
+            <strong>Best for premium branding</strong>
+            <span>Hero visuals, trust signals, and product presentation in one clean layout.</span>
+          </div>
+        </div>
+
+        <div class="about-copy reveal">
+          <h2>Elegant packaging. <span>Memorable scent.</span> Strong brand presence.</h2>
+          <p>
+            Natura India is presented as a premium fragrance destination with a polished layout that highlights quality, consistency, and modern luxury.
+          </p>
+          <p>
+            This design is structured to help the brand look trustworthy on desktop and mobile, while also making it easy for visitors to explore products and contact the business.
+          </p>
+
+          <div class="feature-grid">
+            <div class="feature">
+              <i class="fa-solid fa-swatchbook"></i>
+              <h3>Refined Product Range</h3>
+              <p>Perfumes, oils, diffusers, and room fragrances.</p>
+            </div>
+            <div class="feature">
+              <i class="fa-solid fa-bolt"></i>
+              <h3>Conversion Focused</h3>
+              <p>Strong CTA placement for leads and sales.</p>
+            </div>
+            <div class="feature">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <h3>Mobile Friendly</h3>
+              <p>Responsive layout for every screen size.</p>
+            </div>
+            <div class="feature">
+              <i class="fa-solid fa-seedling"></i>
+              <h3>Natural Brand Feel</h3>
+              <p>Earthy colors and premium soft gradients.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow"><i class="fa-solid fa-bag-shopping"></i> Products</div>
+        <h2 class="title">Selected <span>premium items</span> for a luxury collection</h2>
+        <p class="subtitle">Use these product sections to present your catalog with clarity, value, and a polished store-like experience.</p>
+      </div>
+
+      <div class="tabs reveal" id="filterTabs">
+        <button class="tab-btn active" data-filter="all">All</button>
+        <button class="tab-btn" data-filter="perfume">Perfumes</button>
+        <button class="tab-btn" data-filter="oil">Essential Oils</button>
+        <button class="tab-btn" data-filter="home">Home Fragrance</button>
+      </div>
+
+      <div class="products-grid reveal" id="productsGrid">
+        <article class="product-card" data-category="perfume">
+          <div class="product-image">
+            <span class="product-tag">Best Seller</span>
+            <img src="img1.png" alt="Natural perfume bottle" />
+          </div>
+          <div class="product-body">
+            <div class="product-top">
+              <h3>Signature Natural Perfume</h3>
+              <div class="product-price">₹499</div>
+            </div>
+            <p>A balanced fragrance with warm notes, suitable for daily wear and premium gifting.</p>
+            <div class="product-meta">
+              <span><i class="fa-solid fa-star stars"></i> 4.9</span>
+              <span>50 ml</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="oil">
+          <div class="product-image">
+            <span class="product-tag">Pure Oil</span>
+            <img src="img2.png" alt="Essential oil product" />
+          </div>
+          <div class="product-body">
+            <div class="product-top">
+              <h3>Pure Essential Oil Blend</h3>
+              <div class="product-price">₹349</div>
+            </div>
+            <p>Soft aroma blend for aromatherapy, relaxation, and everyday fragrance rituals.</p>
+            <div class="product-meta">
+              <span><i class="fa-solid fa-star stars"></i> 4.8</span>
+              <span>15 ml</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="home">
+          <div class="product-image">
+            <span class="product-tag">Fresh Home</span>
+            <img src="img3.png" alt="Room diffuser" />
+          </div>
+          <div class="product-body">
+            <div class="product-top">
+              <h3>Luxury Room Diffuser</h3>
+              <div class="product-price">₹799</div>
+            </div>
+            <p>Premium ambient fragrance designed for living rooms, bedrooms, and workspaces.</p>
+            <div class="product-meta">
+              <span><i class="fa-solid fa-star stars"></i> 5.0</span>
+              <span>100 ml</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="perfume">
+          <div class="product-image">
+            <span class="product-tag">Compact</span>
+            <img src="img1.png" alt="Solid perfume" />
+          </div>
+          <div class="product-body">
+            <div class="product-top">
+              <h3>Solid Perfume Pocket Size</h3>
+              <div class="product-price">₹299</div>
+            </div>
+            <p>Easy-to-carry fragrance format for quick touch-ups and travel convenience.</p>
+            <div class="product-meta">
+              <span><i class="fa-solid fa-star stars"></i> 4.7</span>
+              <span>12 g</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow"><i class="fa-solid fa-images"></i> Gallery</div>
+        <h2 class="title">Visual presentation that feels <span>premium</span></h2>
+        <p class="subtitle">The gallery layout is built to showcase products and branding with a clean editorial feel.</p>
+      </div>
+
+      <div class="gallery-grid reveal">
+        <div class="gallery-item">
+          <img src="img1.png" alt="Fragrance collection" />
+          <div class="gallery-overlay"><strong>Product Storytelling</strong><div>Focus on detail and premium look.</div></div>
+        </div>
+        <div class="gallery-item">
+          <img src="img2.png" alt="Essential oils" />
+          <div class="gallery-overlay"><strong>Natural Ingredient Feel</strong><div>Soft, earthy, and trustworthy.</div></div>
+        </div>
+        <div class="gallery-item">
+          <img src="img3.png" alt="Home fragrance" />
+          <div class="gallery-overlay"><strong>Home Fragrance</strong><div>Modern and elegant presentation.</div></div>
+        </div>
+        <div class="gallery-item">
+          <img src="img1.png" alt="Perfume bottle closeup" />
+          <div class="gallery-overlay"><strong>Close-up Detail</strong><div>Luxury product feel.</div></div>
+        </div>
+        <div class="gallery-item">
+          <img src="img2.png" alt="Oil bottle closeup" />
+          <div class="gallery-overlay"><strong>Minimal Composition</strong><div>Strong brand identity.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow"><i class="fa-solid fa-diagram-project"></i> Process</div>
+        <h2 class="title">Simple brand journey for <span>customer confidence</span></h2>
+        <p class="subtitle">A strong process section helps visitors understand how they can discover, choose, and buy with ease.</p>
+      </div>
+
+      <div class="process-grid reveal">
+        <div class="process-step">
+          <div class="step-no">01</div>
+          <h3>Discover the range</h3>
+          <p>Visitors explore fragrances, oils, and home products in a clean catalog layout.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-no">02</div>
+          <h3>Choose the scent</h3>
+          <p>Each card shows useful details like price, size, rating, and category.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-no">03</div>
+          <h3>Contact quickly</h3>
+          <p>Direct CTA buttons make it easy to call, message, or visit the store.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-no">04</div>
+          <h3>Build loyalty</h3>
+          <p>Professional presentation supports repeat orders and premium positioning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow"><i class="fa-solid fa-star"></i> Customer Reviews</div>
+        <h2 class="title">Trust built through <span>customer love</span></h2>
+        <p class="subtitle">Testimonials improve credibility and give a premium brand more social proof.</p>
+      </div>
+
+      <div class="testimonials-wrap reveal">
+        <article class="testimonial">
+          <div class="quote">“</div>
+          <p>The fragrance feels elegant and long-lasting. The website looks professional and makes the brand feel premium.</p>
+          <div class="customer">
+            <div class="avatar">A</div>
+            <div>
+              <strong>Ananya Sharma</strong>
+              <span>Happy customer</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial">
+          <div class="quote">“</div>
+          <p>The layout is very easy to use, and the contact buttons are placed perfectly. Very polished look overall.</p>
+          <div class="customer">
+            <div class="avatar">R</div>
+            <div>
+              <strong>Rahul Verma</strong>
+              <span>Local buyer</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial">
+          <div class="quote">“</div>
+          <p>Perfect for showcasing products, especially if the store wants a luxury identity and more customer inquiries.</p>
+          <div class="customer">
+            <div class="avatar">P</div>
+            <div>
+              <strong>Priya Singh</strong>
+              <span>Repeat customer</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow"><i class="fa-solid fa-circle-question"></i> FAQ</div>
+        <h2 class="title">Questions customers usually ask</h2>
+        <p class="subtitle">Use FAQs to reduce friction and help visitors decide faster.</p>
+      </div>
+
+      <div class="faq-list reveal" id="faqList">
+        <div class="faq-item open">
+          <button class="faq-question" aria-expanded="true">
+            Are the fragrances long-lasting?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer" style="max-height: 120px;">
+            <p>Yes. The page messaging is positioned around a long-lasting premium scent experience and refined fragrance presentation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Is this layout mobile friendly?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. The design uses responsive grids and collapses cleanly for tablets and phones.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can this be used for selling to clients?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. The structure is ideal for pitching a polished business website to local premium brands.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow"><i class="fa-solid fa-envelope"></i> Contact</div>
+        <h2 class="title">Ready to get in touch?</h2>
+        <p class="subtitle">This section helps convert visitors into calls, visits, and WhatsApp leads.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-panel reveal">
+          <h3>Store Details</h3>
+          <p>Use this block for address, phone, and social channels so customers can reach you instantly.</p>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Address</strong>
+                <span>B1/52 At, Assi-Lanka Rd, Assi crossing, Anandbagh, Bhelupur, Varanasi</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Phone</strong>
+                <span><a href="tel:+919793333324">+91 9793333324</a></span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Opening Hours</strong>
+                <span>Monday to Sunday, 11:00 AM - 8:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" aria-label="Google Maps"><i class="fa-solid fa-map-location-dot"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form reveal">
+          <h3>Send an enquiry</h3>
+          <p>Use the form to capture customer interest and turn more visitors into leads.</p>
+
+          <form class="form-grid" onsubmit="return handleSubmit(event)">
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Full Name</label>
+                <input id="name" type="text" placeholder="Your name" required />
+              </div>
+              <div class="field">
+                <label for="phone">Phone Number</label>
+                <input id="phone" type="tel" placeholder="Your phone" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Your email" />
+              </div>
+              <div class="field">
+                <label for="interest">Interested In</label>
+                <select id="interest">
+                  <option>Natural Perfumes</option>
+                  <option>Essential Oils</option>
+                  <option>Solid Perfumes</option>
+                  <option>Home Fragrance</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Write your requirement"></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Submit Enquiry</button>
+            <div class="form-note">This is a front-end form. Connect it to your backend or WhatsApp API later.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Natura India</h4>
+          <p>Premium natural perfumes and essential oils presented with a polished, high-conversion website design.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+919793333324">+91 9793333324</a></li>
+            <li><a href="https://wa.me/919793333324" target="_blank" rel="noopener">WhatsApp Chat</a></li>
+            <li>Varanasi, Uttar Pradesh</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copy">
+        <div>© 2026 Natura India. All rights reserved.</div>
+        <div>Designed for premium brand presentation and lead conversion.</div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fab" aria-label="Quick actions">
+    <a class="wa" href="https://wa.me/919793333324" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a class="call" href="tel:+919793333324" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+  </div>
+
+  <script>
+    const header = document.getElementById('header');
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const navLinks = document.querySelectorAll('.nav-links a, .mobile-menu a');
+    const revealEls = document.querySelectorAll('.reveal');
+    const faqItems = document.querySelectorAll('.faq-item');
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const productCards = document.querySelectorAll('.product-card');
+
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 8);
+    });
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = !mobileMenu.hasAttribute('hidden');
+      if (isOpen) {
+        mobileMenu.setAttribute('hidden', '');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      } else {
+        mobileMenu.removeAttribute('hidden');
+        menuToggle.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+        if (link.closest('.nav-links')) link.classList.add('active');
+        mobileMenu.setAttribute('hidden', '');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => observer.observe(el));
+
+    faqItems.forEach(item => {
+      const button = item.querySelector('.faq-question');
+      const answer = item.querySelector('.faq-answer');
+      button.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        faqItems.forEach(other => {
+          other.classList.remove('open');
+          other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          other.querySelector('.faq-answer').style.maxHeight = null;
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          button.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        productCards.forEach(card => {
+          const show = filter === 'all' || card.dataset.category === filter;
+          card.style.display = show ? 'flex' : 'none';
+        });
+      });
+    });
+
+    function handleSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      alert(`Thanks ${name || 'friend'}! Your enquiry has been captured.`);
+      event.target.reset();
+      return false;
+    }
+
+    // Active section highlight
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        document.querySelectorAll('.nav-links a').forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+        });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+
+    document.querySelectorAll('section, main.hero').forEach(section => {
+      if (section.id) sectionObserver.observe(section);
+    });
+  </script>
+</body>
+</html>
